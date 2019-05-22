@@ -22,7 +22,7 @@ class Cypher():
             for key in range(len(self.phrase)):   
                 deciphered = ''
                 for symbol in self.data['cifrado']:
-                    if symbol in [' ', '.', ',', '!', '?']:
+                    if symbol in ' .-_,!?@1234567890':
                         deciphered = deciphered + symbol
                     elif symbol in self.phrase:
                         index_letter = self.phrase.find(symbol) + 1
